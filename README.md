@@ -1,6 +1,6 @@
 # IRR
 ##Inteligent Robots with ROS
-###Thomas Brefeld
+##Thomas Brefeld
 
 - Homework 1
 - Homework 2
