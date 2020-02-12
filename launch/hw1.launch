@@ -1,0 +1,8 @@
+<launch>
+    <param name="/hw1_topic_pub_freq" type="double" value="1"/>
+    <param name="/hw1_str2" type="string" value="WWWWWWW"/>
+    <node name="hw1_sub" pkg="my_ros_test" type="hw1_sub" 
+          output="screen" launch-prefix="gnome-terminal -e" />
+    <node name="hw1_changer" pkg="my_ros_test" type="hw1_changer" />
+    <node name="hw1_pub2" pkg="my_ros_test" type="hw1_pub2" />
+</launch>

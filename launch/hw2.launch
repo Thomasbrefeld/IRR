@@ -1,0 +1,5 @@
+<launch>
+    <node name = "hw2str_pub" pkg = "my_ros_test" type = "hw2str_pub"/>
+    <node name = "hw2str_changer" pkg = "my_ros_test" type = "hw2str_changer"/>
+    <node name = "hw2str_sub" pkg = "my_ros_test" type = "hw2str_sub" output = "screen" launch-prefix = "gnome-terminal -e" />
+</launch>

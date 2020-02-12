@@ -1,0 +1,8 @@
+<launch>
+    <param name="/news_topic1_pub_freq" type="double" value="0.5" />    
+
+    <node name="news_sub" pkg="my_ros_test" type="news_sub" 
+          output="screen" launch-prefix="gnome-terminal -e" />
+    <node name="news_pub2" pkg="my_ros_test" type="news_pub2" />
+</launch>
+

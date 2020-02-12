@@ -1,0 +1,7 @@
+<launch>
+    <param name="/IoT_pub_freq" type="double" value="0.2" />    
+    <node name="IoTsensor_publisher" pkg="my_ros_test" type="IoTsensor_publisher" />
+    <node name="IoTsensor_subscriber" pkg="my_ros_test" type="IoTsensor_subscriber" 
+          output="screen" launch-prefix="gnome-terminal -e" />
+</launch>
+

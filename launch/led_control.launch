@@ -1,0 +1,11 @@
+<launch>
+    <!--1 is green, 0 is red-->
+    <param name="/led_color" type="int" value="0"/>
+    <include file="$(find tiny_keyboard_reader)/launch/keyboard_reader.launch"/>
+    <node name="led_control" pkg="my_ros_test" type="led_control" />
+    <!--
+    <include file="$(find prizm_ros)/launch/prizm.launch"/>
+    -->
+    <include file="$(find prizm_ros)/launch/led_sim.launch" />
+
+</launch>

@@ -1,0 +1,9 @@
+<launch>
+    <node name = "turtlesim_node" pkg = "turtlesim" type = "turtlesim_node" />
+    <node name = "input_xy_node" pkg = "my_ros_test" type = "input_xy_node" output = "screen" launch-prefix = "gnome-terminal -x" />
+    
+    <node name = "go2xy_node" pkg = "my_ros_test" type = "go2xy_node" output = "screen" launch-prefix = "gnome-terminal -x" />
+    <!--
+    <node name = "go2xy_node" pkg = "my_ros_test" type = "go2xy_node"/>
+    -->
+</launch>
